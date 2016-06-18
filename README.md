@@ -1,10 +1,12 @@
 This is a somewhat modified sample code from [session 509 WWDC 2016](https://developer.apple.com/videos/play/wwdc2016/509) on speech recognition
 
-![](https://raw.github.com/zats/SpeechRecognition/master/website/screen.gif)
+![](https://github.com/zats/SpeechRecognition/raw/master/website/screen.gif)
 
 The goal of this demo is to generate real time subtitles by recognizing the audio feed from the video while playing it back.
 
 ## Important notes
+
+0. Try running on device if you see no output in simulator
 
 1. While I used [this video from Realm Live](https://realm.wistia.com/medias/u3xprtodqi) as a sample, all copyrights belong to their respective owners. It was the video I saw on Twitter when I came up with this idea, plus it has a clear audio track (kudos to Chris) which makes it easier to recognize speech. Also sorry for the video asset, it is quite big - 23Mb.
 
