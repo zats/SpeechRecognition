@@ -12,7 +12,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(localeIdentifier: "en-US"))!
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
 
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
     private func setupVideo() {
         // Asset
-        let URL = Bundle.main().urlForResource("video", withExtension: "mp4")!
+        let URL = Bundle.main.url(forResource: "video", withExtension: "mp4")!
         let asset = AVURLAsset(url: URL)
         let audioTrack = asset.tracks(withMediaType: AVMediaTypeAudio).first!
 
